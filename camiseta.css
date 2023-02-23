@@ -1,0 +1,102 @@
+#productos{
+    text-align: center;
+}
+
+#productos .productos-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    flex-wrap:nowrap;
+}
+
+#productos .nuestros-prod{
+
+    width: 100;
+    height: 380px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    border: 2px solid #D9D9D9;
+    transition: 0.5s ease-in-out;
+    
+    
+}
+
+#productos .nuestros-prod:hover{
+    transform: translateY(13px);
+    
+}
+
+#productos .nuestros-prod::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #96b8bba9, rgba(91, 116, 148, 0.5) );
+    z-index: 2;
+    transition: 0.5s all;
+    border-radius: 30px;
+    opacity: 0;
+    
+}
+#productos .nuestros-prod:hover:before{
+    opacity: 1;
+    
+}
+
+#productos .nuestros-prod img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative; /*LO TOMA COMO UN TODO */
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+#productos .nuestros-prod a{
+    position: absolute; /*COMO LA CLASE GENERAL TIENE UNA POSITION RELATIVE, ESTE ELEMENTO SE ACOPLA A SU NUEVO TAMAÑO COMO UN TODO*/
+    z-index: 3;
+    color:#fff;
+    text-decoration: none;
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+#productos .nuestros-prod:hover a{
+    opacity: 1;
+    transform: translateY(10px);
+    
+}
+
+.i boton-pre, boton-next{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+
+}
+
+.i boton-pre{
+    left: 0;
+}
+
+.i boton-next{
+    right: 0;
+
+}

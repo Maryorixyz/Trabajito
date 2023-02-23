@@ -9,30 +9,76 @@
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 
     <link rel="stylesheet" href="camiseta.css">
+    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/d9d251613f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    
-    <!--HEADER Y NAV-->
-    <header id="header">
-
+    <header>
         <a href="#" class="logo">
-            <img src="logo1.png" alt="marca de tienda">
+                <img src="logo1.png" alt="marca de tienda">
         </a>
-
-        <div>
-            <ul id="navbar">
+        <div class="navbar">
+            <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Compra</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Nosotros</a></li>
-                <li><a href="#">
-                        <i class="fa-regular fa-user"></i> Iniciar Sesión
-                    </a></li>
+            </ul>
+        </div>
+        <div class="iconos">
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-user"></i></li> 
+                <li><a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
+
+        <!-- <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div> -->
     </header>
+    <section id="productos" class="section-np1">
+
+        <h2>CATEGORÍAS</h2>
+        <p>Busca tu <strong>producto favorito</strong> según su categoria.</p>
+
+        <button ><i class="fa-solid fa-backward boton-pre" alt=""></i></button>
+        <button ><i class="fa-solid fa-forward boton-next" alt=""></i></button>
+
+        <div class="productos-container">
+            
+            <div class="nuestros-prod">
+                <img src="Productos/pro-8.jpg" alt="">
+                    <a href="/camiseta.html" target="_blank">POLOS</a>    
+            </div>
+
+            <div class="nuestros-prod">
+                <img src="Productos/pro-6.jpg" alt="">
+                <a href="#" target="_blank">CAMISAS</a>            
+            </div>
+
+            <div class="nuestros-prod">
+                <img src="Productos/pro-3.jpg" alt="">
+                <a href="#">POLERAS</a>            
+            </div>
+
+            <div class="nuestros-prod">
+                <img src="Productos/pro-4.jpg" alt="">
+                <a href="#">ABRIGOS Y CASACAS</a>            
+            </div>
+
+            <div class="nuestros-prod">
+                <img src="Productos/pro-2.png" alt="">
+                <a href="#">PANTALONES Y JOGGERS</a>            
+            </div>
+            <div class="nuestros-prod">
+                <img src="Productos/pro-7.jpg" alt="">
+                <a href="#">SHORT</a>            
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>
